@@ -25,7 +25,7 @@ public class App {
             System.out.println("2. Read");
             System.out.println("3. Update");
             System.out.println("4. Delete");
-            System.out.print("Selectati optiunea CRUD ");
+            System.out.print("Selectati CRUD ");
             Scanner scanner = new Scanner(System.in);
             int choice = scanner.nextInt();
 
