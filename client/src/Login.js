@@ -1,6 +1,7 @@
 import React from 'react';
 import { Form, Button } from 'react-bootstrap';
-import './styles.css'; // Importă stilurile
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+import './styles.css';
 
 const Login = () => {
     return (
@@ -11,21 +12,19 @@ const Login = () => {
                 <form action="">
                     <div className='mb-3'>
                         <label htmlFor="email"><strong>Email</strong></label>
-                        <input type="email" placeholder='Enter Email' name='email'
-                               className='form-control rounded-0'/>
-
+                        <input type="email" placeholder='Enter Email' name='email' className='form-control rounded-0' />
                     </div>
                     <div className='mb-3'>
                         <label htmlFor="password"><strong>Password</strong></label>
-                        <input type="password" placeholder='Enter password' name='password'
-                               className='form-control rounded-0' />
-
+                        <input type="password" placeholder='Enter password' name='password' className='form-control rounded-0' />
                     </div>
                     <button type='submit' className='btn btn-success w-100'>Log in</button>
                 </form>
+                <div className='mt-3'>
+                    Don't have an account? <Link to="/register">Create one</Link>
+                </div>
             </div>
         </div>
-
     )
 }
 
