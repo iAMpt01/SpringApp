@@ -24,10 +24,6 @@ const Login = () => {
                     <button type='submit' className='btn btn-success w-100'>Log in</button>
                 </form>
             </div>
-            <div className='mt-3'>
-                <Link to="/register">Don't have an account? Create one</Link>
-            </div>
-
         </div>
 
     )
